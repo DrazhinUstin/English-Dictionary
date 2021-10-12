@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/88b18bb1d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dictionary">
+        <h1>English dictionary</h1>
+        <form class="search-form">
+            <input type="text" placeholder="Enter a word..." required>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <button type="button" class="clear-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </form>
+        <p class="message">Welcome to the english dictionary! Type a word, submit it and get information about it</p>
+        <article class="search-result">
+            <div class="word">
+                <h2>Hello</h2>
+                <span>exclamation</span>
+            </div>
+            <ul class="description">
+                <li class="phonetics">
+                    <h4>Phonetics</h4>
+                    <div>
+                        <span>/həˈloʊ/</span>
+                        <button class="audio-btn">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                </li>
+                <li class="meanings">
+                    <h4>Meanings</h4>
+                    <p>Used as a greeting or to begin a phone conversation.</p>
+                </li>
+                <li class="example">
+                    <h4>Example</h4>
+                    <p>Hello there, Katie!</p>
+                </li>
+                <li class="synonyms">
+                    <h4>Synonyms</h4>
+                    <div class="btn-container">
+                        <button>Greeting</button>
+                        <button>Welcome</button>
+                        <button>Salutation</button>
+                        <button>Saluting</button>
+                        <button>Hailing</button>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.search-form {
+    position: relative;
+    margin: 2rem 0;
+    input {
+        width: 100%;
+        height: 2.5rem;
+        padding: 0 2rem;
+        border: 1px solid $grey;
+        border-radius: $radius;
+        color: $black;
+        font-size: 1rem;
+        &::placeholder {
+            color: $grey;
+        }
+        &:focus {
+            outline: none;
+            padding: 0 calc(2rem - 1px);
+            border: 2px solid $primary-2;
+        }
+        &:focus ~ .submit-btn {
+            color: $primary-2;
+        }
+        &:valid ~ .clear-btn {
+            display: block;
+        }
+    }
+    .submit-btn {
+        @include align-position(0.5rem, unset);
+        color: $grey;
+    }
+    .clear-btn {
+        @include align-position(unset, 0.5rem);
+        display: none;
+        color: $red;
+    }
+}
