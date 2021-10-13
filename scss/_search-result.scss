@@ -1,4 +1,7 @@
 .message {
+    span {
+        color: $red;
+    }
     &.hide {
         display: none;
     }
@@ -34,7 +37,6 @@
         }
         button {
             @extend %icon-btn;
-            color: $black;
             transition: $transition;
             &:hover {
                 color: $primary-2;

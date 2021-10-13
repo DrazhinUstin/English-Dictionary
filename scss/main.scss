@@ -29,17 +29,45 @@ h1,h2,h3,h4 {
     text-transform: capitalize;
     letter-spacing: $space;
 }
+h1 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1rem;
+}
 p {
     line-height: 1.5;
-}
-a {
-    text-decoration: none;
 }
 li {
     list-style-type: none;
 }
 button {
+    color: $black;
     cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 0.95rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+   body {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
 }
 
 /***************************** LOCAL STYLES *****************************/

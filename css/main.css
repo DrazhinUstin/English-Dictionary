@@ -84,6 +84,10 @@
   color: #e0360b;
 }
 
+.message span {
+  color: #e0360b;
+}
+
 .message.hide {
   display: none;
 }
@@ -118,7 +122,6 @@
 }
 
 .description li:first-child button {
-  color: #2e2b2b;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -189,12 +192,16 @@ h1, h2, h3, h4 {
   letter-spacing: 0.1rem;
 }
 
-p {
-  line-height: 1.5;
+h1 {
+  font-size: 1.8rem;
 }
 
-a {
-  text-decoration: none;
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.5;
 }
 
 li {
@@ -202,7 +209,32 @@ li {
 }
 
 button {
+  color: #2e2b2b;
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /***************************** LOCAL STYLES *****************************/
