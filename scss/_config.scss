@@ -49,3 +49,8 @@ $transition: all 0.4s ease;
     justify-content: space-between;
     align-items: center;
 }
+
+%grid-center {
+    display: grid;
+    place-items: center;
+}

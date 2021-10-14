@@ -9,6 +9,9 @@
     <script src="https://kit.fontawesome.com/88b18bb1d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="preloader">
+        <span></span>
+    </div>
     <div class="dictionary">
         <button class="change-view-btn" onclick="(() => document.body.classList.toggle('active'))()">
             <i class="fas fa-external-link-square-alt"></i>
@@ -23,7 +26,7 @@
                 <i class="fas fa-times"></i>
             </button>
         </form>
-        <p class="message">Welcome to the english dictionary! Type a word, submit it and get information about it.</p>
+        <p class="message">Welcome to the <span>English Dictionary</span>! Type a word, submit it and get full information about it.</p>
         <article class="search-result">
             <div class="word">
                 <h2></h2>

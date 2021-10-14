@@ -34,3 +34,12 @@
         color: $red;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .search-form {
+        input {
+            height: 2.2rem;
+            font-size: 0.9rem;
+        }
+    }
+}

@@ -5,6 +5,7 @@
 @import 'search-form';
 @import 'search-result';
 @import 'change-view';
+@import 'preloader';
 
 /***************************** GLOBAL STYLES *****************************/
 
@@ -20,8 +21,7 @@
 }
 body {
     min-height: 100vh;
-    display: grid;
-    place-items: center;
+    @extend %grid-center;
     background: linear-gradient($primary-1, $primary-2);
     color: $black;
 }
