@@ -9,7 +9,7 @@
   transition: all 0.4s ease;
 }
 
-.search-form .submit-btn, .search-form .clear-btn, .description li:first-child button {
+.search-form .submit-btn, .search-form .clear-btn, .description li:first-child button, .change-view-btn {
   border: none;
   background-color: inherit;
   font-size: 1.2rem;
@@ -170,23 +170,55 @@
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-height: 800px) {
   .search-result {
     max-height: 30rem;
     overflow-y: auto;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-height: 700px) {
   .search-result {
     max-height: 25rem;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-height: 600px) {
   .search-result {
     max-height: 20rem;
   }
+}
+
+.change-view-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  color: #f74d22;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.change-view-btn:hover {
+  color: #e0360b;
+}
+
+body.active {
+  place-items: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f6f6f6;
+}
+
+body.active .dictionary {
+  max-width: 600px;
+  width: 100vw;
+  border-radius: unset;
+}
+
+body.active .search-result {
+  max-height: unset;
+  overflow-y: unset;
 }
 
 /***************************** GLOBAL STYLES *****************************/
@@ -272,6 +304,7 @@ button {
 
 /***************************** LOCAL STYLES *****************************/
 .dictionary {
+  position: relative;
   max-width: 450px;
   width: 90vw;
   padding: 2rem 1rem;

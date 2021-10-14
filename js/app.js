@@ -55,7 +55,7 @@ const startAPP = () => {
 
     buttonsDOM.forEach(elem => {
         elem.addEventListener('click', event => {
-            if (!event.target.tagName === 'BUTTON') return;
+            if (event.target.tagName !== 'BUTTON') return;
             const value = event.target.textContent;
             startSearch(value);
         });

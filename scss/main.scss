@@ -4,6 +4,7 @@
 @import 'config';
 @import 'search-form';
 @import 'search-result';
+@import 'change-view';
 
 /***************************** GLOBAL STYLES *****************************/
 
@@ -74,6 +75,7 @@ button {
 /***************************** LOCAL STYLES *****************************/
 
 .dictionary {
+    position: relative;
     max-width: 450px;
     width: 90vw;
     padding: 2rem 1rem;

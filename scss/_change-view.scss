@@ -1,0 +1,26 @@
+.change-view-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    color: $red-2;
+    transition: $transition;
+    @extend %icon-btn;
+    &:hover {
+        color: $red;
+    }
+}
+
+body.active {
+    place-items: unset;
+    justify-content: center;
+    background: $primary-3;
+    .dictionary {
+        max-width: 600px;
+        width: 100vw;
+        border-radius: unset;
+    }
+    .search-result {
+        max-height: unset;
+        overflow-y: unset;
+    }
+}
