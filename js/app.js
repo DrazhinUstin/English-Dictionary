@@ -7,7 +7,7 @@ const startAPP = () => {
     const form = document.querySelector('.search-form');
     const input = form.querySelector('input');
     const messageDOM = document.querySelector('.message');
-    const buttonsDOM = document.querySelector('.btn-container');
+    const buttonsDOM = [...document.querySelectorAll('.btn-container')];
     const clearBtn = document.querySelector('.clear-btn');
     const audioBtn = document.querySelector('.audio-btn');
     // This we will get dynamically
@@ -53,10 +53,12 @@ const startAPP = () => {
         audioTrack.play();
     });
 
-    buttonsDOM.addEventListener('click', event => {
-        if (!event.target.tagName === 'BUTTON') return;
-        const value = event.target.textContent;
-        startSearch(value);
+    buttonsDOM.forEach(elem => {
+        elem.addEventListener('click', event => {
+            if (!event.target.tagName === 'BUTTON') return;
+            const value = event.target.textContent;
+            startSearch(value);
+        });
     });
 
 };

@@ -20,6 +20,23 @@ $transition: all 0.4s ease;
     @extend %icon-btn;
 }
 
+@mixin btn-color ($color) {
+    border: 1px solid $color;
+    &:hover {
+        background-color: $color;
+        color: $white;
+    }
+    @extend %btn;
+}
+
+%btn {
+    padding: 0.25rem 0.2rem;
+    border-radius: $radius-2;
+    background-color: inherit;
+    font-size: 0.9rem;
+    transition: $transition;
+}
+
 %icon-btn {
     border: none;
     background-color: inherit;

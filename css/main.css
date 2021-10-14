@@ -1,5 +1,14 @@
 /***************************** IMPORTS *****************************/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+.description li .btn-container button, .description li:last-child button {
+  padding: 0.25rem 0.2rem;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 .search-form .submit-btn, .search-form .clear-btn, .description li:first-child button {
   border: none;
   background-color: inherit;
@@ -105,7 +114,7 @@
 }
 
 .word {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .description li {
@@ -115,6 +124,28 @@
 
 .description li h4 {
   margin-bottom: 1rem;
+}
+
+.description li .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.description li .btn-container button {
+  border: 1px solid #126C87;
+}
+
+.description li .btn-container button:hover {
+  background-color: #126C87;
+  color: #FFFFFF;
 }
 
 .description li:first-child {
@@ -130,31 +161,32 @@
   color: #126C87;
 }
 
-.description li:last-child div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-  row-gap: 0.5rem;
-}
-
 .description li:last-child button {
-  padding: 0.2rem;
-  border: 1px solid #126C87;
-  border-radius: 0.2rem;
-  background-color: inherit;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  border: 1px solid #e0360b;
 }
 
 .description li:last-child button:hover {
-  background-color: #126C87;
+  background-color: #e0360b;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 540px) {
+  .search-result {
+    max-height: 30rem;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-result {
+    max-height: 25rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .search-result {
+    max-height: 20rem;
+  }
 }
 
 /***************************** GLOBAL STYLES *****************************/
@@ -210,6 +242,7 @@ li {
 
 button {
   color: #2e2b2b;
+  line-height: 1;
   cursor: pointer;
 }
 

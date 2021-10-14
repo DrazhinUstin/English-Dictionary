@@ -19,7 +19,7 @@
 
 .word {
     @extend %flex-between;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .description {
@@ -28,6 +28,15 @@
         border-bottom: 1px solid $grey;
         h4 {
             margin-bottom: 1rem;
+        }
+        .btn-container {
+            display: flex;
+            flex-flow: row wrap;
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+            button {
+                @include btn-color($primary-2);
+            }
         }
     }
     li:first-child {
@@ -44,22 +53,27 @@
         }
     }
     li:last-child {
-        div {
-            display: flex;
-            flex-flow: row wrap;
-            column-gap: 0.5rem;
-            row-gap: 0.5rem;
-        }
         button {
-            padding: 0.2rem;
-            border: 1px solid $primary-2;
-            border-radius: $radius-2;
-            background-color: inherit;
-            transition: $transition;
-            &:hover {
-                background-color: $primary-2;
-                color: $white;
-            }
+            @include btn-color($red);
         }
     }
+}
+
+@media screen and (max-width: 540px) {
+    .search-result {
+        max-height: 30rem;
+        overflow-y: auto;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .search-result {
+        max-height: 25rem;
+    }    
+}
+
+@media screen and (max-width: 350px) {
+    .search-result {
+        max-height: 20rem;
+    }    
 }
