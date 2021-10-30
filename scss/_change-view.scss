@@ -1,10 +1,7 @@
 .change-view-btn {
-    position: absolute;
-    top: 0.4rem;
-    right: 0.5rem;
+    @include absolute-position(0.4rem, unset, 0.5rem, unset);
     color: $red-2;
     transition: $transition;
-    @extend %icon-btn;
     &:hover {
         color: $red;
     }
@@ -16,11 +13,9 @@ body.active {
     background: $primary-3;
     .dictionary {
         max-width: 600px;
+        max-height: unset;
         width: 100vw;
         border-radius: unset;
-    }
-    .search-result {
-        max-height: unset;
         overflow-y: unset;
     }
 }

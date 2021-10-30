@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Dictionary</title>
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/88b18bb1d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="preloader">
         <span></span>
     </div>
     <div class="dictionary">
-        <button class="change-view-btn" onclick="(() => document.body.classList.toggle('active'))()">
+        <button class="change-view-btn icon" onclick="(() => document.body.classList.toggle('active'))()">
             <i class="fas fa-external-link-square-alt"></i>
         </button>
         <h1>English dictionary</h1>
         <form class="search-form">
             <input type="text" placeholder="Enter a word..." required>
-            <button type="submit" class="submit-btn">
+            <button type="submit" class="submit-btn icon">
                 <i class="fas fa-search"></i>
             </button>
-            <button type="button" class="clear-btn">
+            <button type="button" class="clear-btn icon">
                 <i class="fas fa-times"></i>
             </button>
         </form>
@@ -37,7 +37,7 @@
                     <h4>Phonetics</h4>
                     <div>
                         <span></span>
-                        <button class="audio-btn">
+                        <button class="audio-btn icon">
                             <i class="fas fa-volume-up"></i>
                         </button>
                     </div>

@@ -1,4 +1,4 @@
-$primary-1: #178caf;
+$primary-1: #2da5c9;
 $primary-2: #126C87;
 $primary-3: #f6f6f6;
 $black: #2e2b2b;
@@ -12,13 +12,12 @@ $radius-2: 0.2rem;
 $space: 0.1rem;
 $transition: all 0.4s ease;
 
-@mixin align-position ($left, $right) {
+@mixin absolute-position ($top, $left, $right, $translate) {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: $top;
     left: $left;
     right: $right;
-    @extend %icon-btn;
+    transform: $translate;
 }
 
 @mixin btn-color ($color) {
@@ -27,21 +26,6 @@ $transition: all 0.4s ease;
         background-color: $color;
         color: $white;
     }
-    @extend %btn;
-}
-
-%btn {
-    padding: 0.25rem 0.2rem;
-    border-radius: $radius-2;
-    background-color: inherit;
-    font-size: 0.9rem;
-    transition: $transition;
-}
-
-%icon-btn {
-    border: none;
-    background-color: inherit;
-    font-size: 1.2rem;
 }
 
 %flex-between {

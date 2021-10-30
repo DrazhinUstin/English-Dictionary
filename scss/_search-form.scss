@@ -25,11 +25,11 @@
         }
     }
     .submit-btn {
-        @include align-position(0.5rem, unset);
+        @include absolute-position(50%, 0.5rem, unset, translateY(-50%));
         color: $grey;
     }
     .clear-btn {
-        @include align-position(unset, 0.5rem);
+        @include absolute-position(50%, unset, 0.5rem, translateY(-50%));
         display: none;
         color: $red;
     }

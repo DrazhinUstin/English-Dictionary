@@ -1,20 +1,5 @@
 /***************************** IMPORTS *****************************/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
-.description li .btn-container button, .description li:last-child button {
-  padding: 0.25rem 0.2rem;
-  border-radius: 0.2rem;
-  background-color: inherit;
-  font-size: 0.9rem;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.search-form .submit-btn, .search-form .clear-btn, .description li:first-child button, .change-view-btn {
-  border: none;
-  background-color: inherit;
-  font-size: 1.2rem;
-}
-
 .word, .description li:first-child div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,207 +16,6 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
-}
-
-.search-form {
-  position: relative;
-  margin: 2rem 0;
-}
-
-.search-form input {
-  width: 100%;
-  height: 2.5rem;
-  padding: 0 2rem;
-  border: 1px solid #c8c5c5;
-  border-radius: 0.5rem;
-  color: #2e2b2b;
-  font-size: 1rem;
-}
-
-.search-form input::-webkit-input-placeholder {
-  color: #c8c5c5;
-}
-
-.search-form input:-ms-input-placeholder {
-  color: #c8c5c5;
-}
-
-.search-form input::-ms-input-placeholder {
-  color: #c8c5c5;
-}
-
-.search-form input::placeholder {
-  color: #c8c5c5;
-}
-
-.search-form input:focus {
-  outline: none;
-  padding: 0 calc(2rem - 1px);
-  border: 2px solid #126C87;
-}
-
-.search-form input:focus ~ .submit-btn {
-  color: #126C87;
-}
-
-.search-form input:valid ~ .clear-btn {
-  display: block;
-}
-
-.search-form .submit-btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0.5rem;
-  right: unset;
-  color: #c8c5c5;
-}
-
-.search-form .clear-btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: unset;
-  right: 0.5rem;
-  display: none;
-  color: #e0360b;
-}
-
-@media screen and (max-width: 350px) {
-  .search-form input {
-    height: 2.2rem;
-    font-size: 0.9rem;
-  }
-}
-
-.message span {
-  color: #e0360b;
-}
-
-.message.hide {
-  display: none;
-}
-
-.message.hide ~ .search-result {
-  display: block;
-}
-
-.search-result {
-  display: none;
-}
-
-.search-result span, .search-result p {
-  color: #807e7e;
-}
-
-.word {
-  margin-bottom: 2rem;
-}
-
-.description li {
-  padding: 1rem 0;
-  border-bottom: 1px solid #c8c5c5;
-}
-
-.description li h4 {
-  margin-bottom: 1rem;
-}
-
-.description li .btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-  row-gap: 0.5rem;
-}
-
-.description li .btn-container button {
-  border: 1px solid #126C87;
-}
-
-.description li .btn-container button:hover {
-  background-color: #126C87;
-  color: #FFFFFF;
-}
-
-.description li:first-child {
-  border-top: 1px solid #c8c5c5;
-}
-
-.description li:first-child button {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.description li:first-child button:hover {
-  color: #126C87;
-}
-
-.description li:last-child button {
-  border: 1px solid #e0360b;
-}
-
-.description li:last-child button:hover {
-  background-color: #e0360b;
-  color: #FFFFFF;
-}
-
-@media screen and (max-height: 800px) {
-  .search-result {
-    max-height: 30rem;
-    overflow-y: auto;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .search-result {
-    max-height: 25rem;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .search-result {
-    max-height: 20rem;
-  }
-}
-
-.change-view-btn {
-  position: absolute;
-  top: 0.4rem;
-  right: 0.5rem;
-  color: #f74d22;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.change-view-btn:hover {
-  color: #e0360b;
-}
-
-body.active {
-  place-items: unset;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #f6f6f6;
-}
-
-body.active .dictionary {
-  max-width: 600px;
-  width: 100vw;
-  border-radius: unset;
-}
-
-body.active .search-result {
-  max-height: unset;
-  overflow-y: unset;
 }
 
 .preloader {
@@ -284,6 +68,166 @@ body.active .search-result {
   }
 }
 
+.search-form {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.search-form input {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 2rem;
+  border: 1px solid #c8c5c5;
+  border-radius: 0.5rem;
+  color: #2e2b2b;
+  font-size: 1rem;
+}
+
+.search-form input::-webkit-input-placeholder {
+  color: #c8c5c5;
+}
+
+.search-form input:-ms-input-placeholder {
+  color: #c8c5c5;
+}
+
+.search-form input::-ms-input-placeholder {
+  color: #c8c5c5;
+}
+
+.search-form input::placeholder {
+  color: #c8c5c5;
+}
+
+.search-form input:focus {
+  outline: none;
+  padding: 0 calc(2rem - 1px);
+  border: 2px solid #126C87;
+}
+
+.search-form input:focus ~ .submit-btn {
+  color: #126C87;
+}
+
+.search-form input:valid ~ .clear-btn {
+  display: block;
+}
+
+.search-form .submit-btn {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  right: unset;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #c8c5c5;
+}
+
+.search-form .clear-btn {
+  position: absolute;
+  top: 50%;
+  left: unset;
+  right: 0.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+  color: #e0360b;
+}
+
+@media screen and (max-width: 350px) {
+  .search-form input {
+    height: 2.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+.message span {
+  color: #e0360b;
+}
+
+.message.hide {
+  display: none;
+}
+
+.message.hide ~ .search-result {
+  display: block;
+}
+
+.search-result {
+  display: none;
+}
+
+.search-result span, .search-result p {
+  color: #807e7e;
+}
+
+.word {
+  margin-bottom: 2rem;
+}
+
+.description li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #c8c5c5;
+}
+
+.description li h4 {
+  margin-bottom: 1rem;
+}
+
+.description li:first-child {
+  border-top: 1px solid #c8c5c5;
+}
+
+.description li:first-child button {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.description li:first-child button:hover {
+  color: #126C87;
+}
+
+.description li:last-child button {
+  border: 1px solid #e0360b;
+}
+
+.description li:last-child button:hover {
+  background-color: #e0360b;
+  color: #FFFFFF;
+}
+
+.change-view-btn {
+  position: absolute;
+  top: 0.4rem;
+  left: unset;
+  right: 0.5rem;
+  -webkit-transform: unset;
+          transform: unset;
+  color: #f74d22;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.change-view-btn:hover {
+  color: #e0360b;
+}
+
+body.active {
+  place-items: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f6f6f6;
+}
+
+body.active .dictionary {
+  max-width: 600px;
+  max-height: unset;
+  width: 100vw;
+  border-radius: unset;
+  overflow-y: unset;
+}
+
 /***************************** GLOBAL STYLES *****************************/
 * {
   margin: 0;
@@ -305,8 +249,8 @@ body.active .search-result {
 
 body {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#178caf), to(#126C87));
-  background: linear-gradient(#178caf, #126C87);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2da5c9), to(#126C87));
+  background: linear-gradient(#2da5c9, #126C87);
   color: #2e2b2b;
 }
 
@@ -317,6 +261,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  text-align: center;
   font-size: 1.8rem;
 }
 
@@ -366,12 +311,44 @@ button {
 .dictionary {
   position: relative;
   max-width: 450px;
+  max-height: 95vh;
   width: 90vw;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
+  overflow-y: auto;
   background-color: #f6f6f6;
 }
 
-.dictionary h1 {
-  text-align: center;
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.btn-container button {
+  padding: 0.25rem 0.2rem;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: 1px solid #126C87;
+}
+
+.btn-container button:hover {
+  background-color: #126C87;
+  color: #FFFFFF;
+}
+
+.icon {
+  border: none;
+  background-color: inherit;
+  font-size: 1.2rem;
 }

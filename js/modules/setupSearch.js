@@ -46,6 +46,7 @@ const setupSearch = () => {
 
     clearBtn.addEventListener('click', () => {
         input.value = '';
+        input.focus();
     });
 
     audioBtn.addEventListener('click', () => {

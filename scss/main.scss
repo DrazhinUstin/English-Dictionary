@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import 'config';
+@import 'preloader';
 @import 'search-form';
 @import 'search-result';
 @import 'change-view';
-@import 'preloader';
 
 /***************************** GLOBAL STYLES *****************************/
 
@@ -31,6 +31,7 @@ h1,h2,h3,h4 {
     letter-spacing: $space;
 }
 h1 {
+    text-align: center;
     font-size: 1.8rem;
 }
 h4 {
@@ -77,11 +78,31 @@ button {
 .dictionary {
     position: relative;
     max-width: 450px;
+    max-height: 95vh;
     width: 90vw;
     padding: 2rem 1rem;
     border-radius: $radius;
+    overflow-y: auto;
     background-color: $primary-3;
-    h1 {
-        text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    button {
+        padding: 0.25rem 0.2rem;
+        border-radius: $radius-2;
+        background-color: inherit;
+        font-size: 0.9rem;
+        transition: $transition;
+        @include btn-color($primary-2);
     }
+}
+
+.icon {
+    border: none;
+    background-color: inherit;
+    font-size: 1.2rem;
 }
